@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>build | TypeScript4 文档</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="https://s3.bmp.ovh/imgs/2023/02/15/16aa54f3ee84602e.webp">
+    <meta name="description" content="TypeScript4 最新官方文档翻译">
+    
+    <link rel="preload" href="/assets/css/0.styles.5a4e7a19.css" as="style"><link rel="preload" href="/assets/js/app.989b7baa.js" as="script"><link rel="preload" href="/assets/js/3.2b256d15.js" as="script"><link rel="preload" href="/assets/js/2.14e61edd.js" as="script"><link rel="preload" href="/assets/js/37.f6bb2295.js" as="script"><link rel="prefetch" href="/assets/js/1.30f04140.js"><link rel="prefetch" href="/assets/js/10.f7a495a8.js"><link rel="prefetch" href="/assets/js/11.a855358d.js"><link rel="prefetch" href="/assets/js/12.8fd7fab5.js"><link rel="prefetch" href="/assets/js/13.2afa0429.js"><link rel="prefetch" href="/assets/js/14.1e35250e.js"><link rel="prefetch" href="/assets/js/15.afed4b79.js"><link rel="prefetch" href="/assets/js/16.118820bc.js"><link rel="prefetch" href="/assets/js/17.63695e8b.js"><link rel="prefetch" href="/assets/js/18.a8c1ab8b.js"><link rel="prefetch" href="/assets/js/19.5991eef9.js"><link rel="prefetch" href="/assets/js/20.2c93c81a.js"><link rel="prefetch" href="/assets/js/21.22af22a4.js"><link rel="prefetch" href="/assets/js/22.b178314d.js"><link rel="prefetch" href="/assets/js/23.7bb5155d.js"><link rel="prefetch" href="/assets/js/24.32928d66.js"><link rel="prefetch" href="/assets/js/25.bce0e3a5.js"><link rel="prefetch" href="/assets/js/26.a75f8d22.js"><link rel="prefetch" href="/assets/js/27.6a008869.js"><link rel="prefetch" href="/assets/js/28.62a88386.js"><link rel="prefetch" href="/assets/js/29.00c91234.js"><link rel="prefetch" href="/assets/js/30.9a94e030.js"><link rel="prefetch" href="/assets/js/31.5350d046.js"><link rel="prefetch" href="/assets/js/32.57c075eb.js"><link rel="prefetch" href="/assets/js/33.7f8325f1.js"><link rel="prefetch" href="/assets/js/34.e4a13e64.js"><link rel="prefetch" href="/assets/js/35.ce6bee81.js"><link rel="prefetch" href="/assets/js/36.d4e612c9.js"><link rel="prefetch" href="/assets/js/38.fafac065.js"><link rel="prefetch" href="/assets/js/39.db6ead3b.js"><link rel="prefetch" href="/assets/js/4.d585a15b.js"><link rel="prefetch" href="/assets/js/40.3ae825d3.js"><link rel="prefetch" href="/assets/js/41.eb5bca38.js"><link rel="prefetch" href="/assets/js/42.e123659e.js"><link rel="prefetch" href="/assets/js/43.b7d0edb4.js"><link rel="prefetch" href="/assets/js/44.9ac2fa6e.js"><link rel="prefetch" href="/assets/js/45.de05617d.js"><link rel="prefetch" href="/assets/js/46.b1486fdd.js"><link rel="prefetch" href="/assets/js/47.08afddec.js"><link rel="prefetch" href="/assets/js/48.280cf1e7.js"><link rel="prefetch" href="/assets/js/49.84ff614f.js"><link rel="prefetch" href="/assets/js/5.363d3255.js"><link rel="prefetch" href="/assets/js/50.f80f9ad8.js"><link rel="prefetch" href="/assets/js/51.fbacba2d.js"><link rel="prefetch" href="/assets/js/52.5c1b925e.js"><link rel="prefetch" href="/assets/js/53.5f0acd91.js"><link rel="prefetch" href="/assets/js/54.6263dbec.js"><link rel="prefetch" href="/assets/js/55.50c2a094.js"><link rel="prefetch" href="/assets/js/56.0736662d.js"><link rel="prefetch" href="/assets/js/57.8f7787a3.js"><link rel="prefetch" href="/assets/js/58.8e01826d.js"><link rel="prefetch" href="/assets/js/59.26c60887.js"><link rel="prefetch" href="/assets/js/6.47aa4824.js"><link rel="prefetch" href="/assets/js/60.cc474b85.js"><link rel="prefetch" href="/assets/js/61.899dbd5f.js"><link rel="prefetch" href="/assets/js/9.ff3ff717.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.164c51b6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5a4e7a19.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu only-sidebarItem"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://s3.bmp.ovh/imgs/2022/12/02/bc7428e3916c3a4c.jpg" alt="TypeScript4 文档" class="logo"> <span class="site-name can-hide">TypeScript4 文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="西螈的 JavaScript 博客" class="dropdown-title"><!----> <span class="title" style="display:;">西螈的 JavaScript 博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/rc4gyyc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/rc4gyyc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="西螈的 JavaScript 博客" class="dropdown-title"><!----> <span class="title" style="display:;">西螈的 JavaScript 博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/rc4gyyc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/rc4gyyc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/pages/2e5a76/" aria-current="page" class="active sidebar-link">build</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/2e5a76/#本地搭建" class="sidebar-link">本地搭建</a></li><li class="sidebar-sub-header level2"><a href="/pages/2e5a76/#优化" class="sidebar-link">优化</a></li><li class="sidebar-sub-header level2"><a href="/pages/2e5a76/#主题" class="sidebar-link">主题</a></li><li class="sidebar-sub-header level2"><a href="/pages/2e5a76/#部署" class="sidebar-link">部署</a></li><li class="sidebar-sub-header level2"><a href="/pages/2e5a76/#购买域名" class="sidebar-link">购买域名</a></li><li class="sidebar-sub-header level2"><a href="/pages/2e5a76/#域名解析" class="sidebar-link">域名解析</a></li><li class="sidebar-sub-header level2"><a href="/pages/2e5a76/#域名解析完善" class="sidebar-link">域名解析完善</a></li><li class="sidebar-sub-header level2"><a href="/pages/2e5a76/#图片上传工具" class="sidebar-link">图片上传工具</a></li><li class="sidebar-sub-header level2"><a href="/pages/2e5a76/#为图床设置自己的域名" class="sidebar-link">为图床设置自己的域名</a></li><li class="sidebar-sub-header level2"><a href="/pages/2e5a76/#_1-手动同步" class="sidebar-link">1. 手动同步</a></li><li class="sidebar-sub-header level2"><a href="/pages/2e5a76/#_2-推送两个仓库" class="sidebar-link">2. 推送两个仓库</a></li><li class="sidebar-sub-header level2"><a href="/pages/2e5a76/#_3-github-actions-自动同步-推荐使用" class="sidebar-link">3. Github Actions 自动同步（推荐使用）</a></li><li class="sidebar-sub-header level2"><a href="/pages/2e5a76/#通过github-action自动构建并部署项目" class="sidebar-link">通过Github Action自动构建并部署项目</a></li><li class="sidebar-sub-header level2"><a href="/pages/2e5a76/#优化自动部署" class="sidebar-link">优化自动部署</a></li></ul></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/categories/?category=Blog" title="分类" data-v-06225672>Blog</a></li></ul> <div class="info" data-v-06225672><!----> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2025-03-28</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABKFJREFUSA3tVl1oFVcQnrMbrak3QUgkya1akpJYcrUtIqW1JvFBE9LiQ5v6JmJpolbMg32rVrhgoYK0QiMY6i9Y6EMaW5D+xFJaTYItIuK2Kr3+BJNwkxBj05sQY3b3nM6cs2dv9t7NT/vQJw/sndk5M/PNzJkzewGerP+pAmy+ON8lLzUJgA8ZYxYIYZmGYRnctDaWvJJAmTtfP1pvXsBCCPP8QFcCaRkZYACgDZFO4stNIcBCajEOlmmC9XpJ9bAGCaPaPmzPl32dvLSVu3BWCTQs0XQQ6g0DYgwLIoAZbBCdW/i+781o1VVlm/410mw4h06Y7bIPHNyWDyL4FHkX03Q8SrzNhZTZriieckWt7cL6MM85YcLpsi/7O9/iXFT6MswI0DmmpkSaJ0qLxFIm3+i1THHB3zmBH3PYx9CcykcLOeQVVa7QtdxTgQgEleX2AjHYfwA+2ddV77ruGoJUbhGDI09YSNXyMpUt5ylOzxgbUmtOp7NmbNt8v3arjTBfYELmLUV+M+nSawNNAUqpT3ClJWg5I3BLT+cGW/DXNGCa6tx1aakCGEigArTn4TDIPdrXXYKCZNrHLMCOEPvHBlLQ99s9eHB7EB6NTki73CVPQ2F5MSx/uRQixfmq7rK0wYD8w8E905bnPDfwoWs/rfv93NWN/ZfvwsLIU7A09gxECyISeGJkHAau98L97tuw7NXnoPyNF8FcYGLGKsOs0mN3OEyec9esGW/ZEl945dTP34wlR2FZVQWU1q0Cw8Tr7p+hgLLNL0FPxx/Q35mA8aEUrH6nCgwEl0tn7wUiZYJnNRh6DK4UH/k0lfyrsBKdPVv/AriGIQcEDQZ65LBAGe2Rzui9Ybjz7XUppz1/uKBbyVPGkN3ZAeC6hr0x7Nr38N5+EqkoOm17xpoqR9ohQF55ERSvr4Dkr3chNfC3DMzGJlNBElW8w9nsGQvhNGIzDkXzCg8cLK951xHsFBlTJspJNi3ZFIMF2AeDV3q8DNOB+YHi6QTrChDIWDBRi5U5f+ZMfJLu3ccrqxtdxk4SKH336LFxSmkqefwU5T8fhdSdQf9IVKD6aNiwI/hnmcAZ91isYMJIaCUCx9W098+LgruikeTqzqqxKPUwqJyCPJiyemVVZBOijDGjD38Os0jOiSPL1z3SPjXNANbiNPXAdzTfukjjuknNBbyz3nwgTd3AVFqUJ5hpHlq9MveLnWwttUfoygBmvVjuikxND3znrhsELnZk7k+OjIGxeNEkomyLVta0xxn+HZhjBc4YZ/AFjHjz9u3xRZl2BN4aq9nFwWh16IrQ1aHHEd3j1+4/dB9OtH4e29A2H1DyHQRmOSfQZ1Fy7MHBTGB6J/Djq6p3OxyO2cB+4Car7v/o3GXgfAkj23+x9ID1Teoamo/SXcbvSf2PX7Vc8DdCmE1vN9di+32P9/5YR3vLnhCVGUWBjEkr3yh4H8v9CzmsbdhzOKzsJKM90iFdaTMjRPhGVsakRvOaRidljo6H6G7j+ctrJpsP+4COhDIl0La2+FS4+5mlocBaXY5QnGZysIBYoeSsl5qQzrSj/cgNrfuEzlWBfwA+EjrZyWUvpAAAAABJRU5ErkJggg==">build<!----></h1> <!----> <div class="theme-vdoing-content content__default"><h1 id="零成本搭建个人博客网站"><a href="#零成本搭建个人博客网站" class="header-anchor">#</a> 零成本搭建个人博客网站</h1> <p>使用VuePress+GithubPage<strong>一块钱</strong>搭建自己的个人博客网站</p> <p>环境准备</p> <ol><li>Node</li> <li>Chrome浏览器或FireFox浏览器</li> <li>一台电脑（Windows）</li> <li>1RMB</li></ol> <p>本文主要参考：</p> <p><a href="https://www.peterjxl.com/Blog/Introduce/#%E6%9C%AC%E7%B3%BB%E5%88%97%E8%AE%B2%E4%BB%80%E4%B9%88" target="_blank" rel="noopener noreferrer">从零开始搭建博客系列 | 从 01 开始<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://github.com/mqyqingfeng/Blog/issues/279" target="_blank" rel="noopener noreferrer">VuePress 博客搭建系列 33 篇正式完结！ · Issue #279 · mqyqingfeng/Blog · GitHub<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h1 id="从零开始搭建博客"><a href="#从零开始搭建博客" class="header-anchor">#</a> 从零开始搭建博客</h1> <h2 id="本地搭建"><a href="#本地搭建" class="header-anchor">#</a> 本地搭建</h2> <ol><li>创建并进入一个新目录</li></ol> <p>​		在命令行中创建并进入新目录 <code>vuepress-starter</code>（可以自定义名字）：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> vuepress-starter
+</code></pre></div><ol start="2"><li>使用npm（node包管理器）进行初始化（-y可以自动确认问题）</li></ol> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">npm</span> init  <span class="token parameter variable">-y</span>
+</code></pre></div><ol start="3"><li>将 VuePress 安装为本地依赖</li></ol> <div class="language-shell extra-class"><pre class="language-shell"><code> <span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-D</span> vuepress
+</code></pre></div><ol start="4"><li><p>创建你的第一篇文档</p> <p>VuePress 会以 docs 为文档根目录，所以README.md 相当于主页：</p></li></ol> <p>​		创建 <code>docs</code> 目录，并在其中创建 <code>README.md</code> 文件作为首页内容：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">mkdir</span> docs
+<span class="token builtin class-name">echo</span> <span class="token string">'# Hello VuePress'</span> <span class="token operator">&gt;</span> docs/README.md
+</code></pre></div><ol start="5"><li>修改 package.json 文件，添加一些启动命令：</li></ol> <div class="language-json extra-class"><pre class="language-json"><code>  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;docs:dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;docs:build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><ul><li><p>这样做的好处是你可以通过简单的命令来运行开发服务器或构建生产版本的静态文件，比如：</p> <ul><li><p>启动本地开发服务器：<code>npm run docs:dev</code></p></li> <li><p>构建用于部署的静态文件：<code>npm run docs:build</code></p></li></ul></li></ul> <ol start="6"><li>测试本地环境</li></ol> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">npm</span> run docs:dev
+</code></pre></div><ol start="7"><li>运行编译成功后，会有提示：</li></ol> <p><img src="https://img.cyanyep.top/picture/image-20250116215750272.png" alt="image-20250116215750272"></p> <ol start="8"><li>在浏览器打开这个shell窗口中的网址 <code>http://localhost:8081</code>（默认端口是8080，可能我的端口被占用了），可以看到如下内容：</li></ol> <p><img src="https://img.cyanyep.top/picture/image-20250116220142153.png" alt="image-20250116220142153"></p> <h2 id="优化"><a href="#优化" class="header-anchor">#</a> 优化</h2> <p>都是一些没有的，做不做无所谓</p> <h3 id="配置首页"><a href="#配置首页" class="header-anchor">#</a> 配置首页</h3> <p>现在的页面太简单了，我们可以对项目首页进行配置，修改 docs/README.md ：</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">home</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">heroImage</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//s3.bmp.ovh/imgs/2022/12/02/bc7428e3916c3a4c.jpg
+<span class="token key atrule">heroText</span><span class="token punctuation">:</span> Hero标题
+<span class="token key atrule">tagline</span><span class="token punctuation">:</span> Hero副标题
+<span class="token key atrule">actionText</span><span class="token punctuation">:</span> 快速上手→
+<span class="token key atrule">actionLink</span><span class="token punctuation">:</span> /README.md
+<span class="token key atrule">features</span><span class="token punctuation">:</span>
+
+<span class="token punctuation">-</span> <span class="token key atrule">title</span><span class="token punctuation">:</span> 简洁至上
+  <span class="token key atrule">details</span><span class="token punctuation">:</span> 以Markdown为中心的项目结构，以最少的配置帮助你专注于写作。
+<span class="token punctuation">-</span> <span class="token key atrule">title</span><span class="token punctuation">:</span> Vue驱动
+  <span class="token key atrule">details</span><span class="token punctuation">:</span> 享受Vue+ webpack 的开发体验，在Markdown中使用Vue组件，同时可以使用Vue来开发自定义主题。
+<span class="token punctuation">-</span> <span class="token key atrule">title</span><span class="token punctuation">:</span> 高性能
+  <span class="token key atrule">details</span><span class="token punctuation">:</span> VuePress为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+  <span class="token key atrule">footer</span><span class="token punctuation">:</span> 粤ICP备2022067627号<span class="token punctuation">-</span>1  粤公网安备 44011302003646号
+</code></pre></div><p>以上内容使用 yaml 语法，读者修改的时候注意不要违反了 yaml 语法规则。</p> <h3 id="热更新"><a href="#热更新" class="header-anchor">#</a> 热更新</h3> <p>什么是热更新：如果我们已经运行了本项目，在我们修改文档时候，VuePress 能自动更新博客，不用重新运行也能看到修改后的博客的内容（相当于会自动编译运行，不用我们手工编译运行了）。</p> <p>VuePress 本身是支持热更新的，但是有 bug……有时候会热更新失败</p> <p>因此，想要做到热更新，得修改下命令，添加一个临时目录：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;docs:dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs --temp .temp&quot;</span>
+</code></pre></div><p>由于该临时目录只用于解决热更新失败的问题，我们在 <code>.gitignore</code> 也添加一条忽略的规则：</p> <div class="language-.gitignore extra-class"><pre class="language-text"><code>.temp
+</code></pre></div><p>注意，我们修改了 package.json 文件，得重新运行本项目。</p> <p>在后续的使用过程中，一般文档内容等会自动更新，但如果有修改什么配置文件，可能得重启；</p> <h3 id="导航栏配置"><a href="#导航栏配置" class="header-anchor">#</a> 导航栏配置</h3> <p>接下来我们来配置下导航栏。</p> <p>新建 docs/.vuepress/config.js 配置文件，文件内容如下：</p> <div class="language-yml extra-class"><pre class="language-yml"><code>module.exports = <span class="token punctuation">{</span>
+  <span class="token key atrule">title</span><span class="token punctuation">:</span> <span class="token string">'TypeScript4 文档'</span><span class="token punctuation">,</span>
+  <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">'TypeScript4 最新官方文档翻译'</span><span class="token punctuation">,</span>
+  <span class="token key atrule">head</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token key atrule">rel</span><span class="token punctuation">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span> <span class="token key atrule">href</span><span class="token punctuation">:</span> <span class="token string">'https://s3.bmp.ovh/imgs/2023/02/15/16aa54f3ee84602e.webp'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token key atrule">themeConfig</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  	<span class="token key atrule">subSidebar</span><span class="token punctuation">:</span> <span class="token string">'auto'</span><span class="token punctuation">,</span>
+    <span class="token key atrule">logo</span><span class="token punctuation">:</span> <span class="token string">'https://s3.bmp.ovh/imgs/2022/12/02/bc7428e3916c3a4c.jpg'</span><span class="token punctuation">,</span>
+    <span class="token key atrule">nav</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> <span class="token key atrule">text</span><span class="token punctuation">:</span> <span class="token string">'首页'</span><span class="token punctuation">,</span> <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> 
+          <span class="token key atrule">text</span><span class="token punctuation">:</span> <span class="token string">'西螈的 JavaScript 博客'</span><span class="token punctuation">,</span> 
+          <span class="token key atrule">items</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">{</span> <span class="token key atrule">text</span><span class="token punctuation">:</span> <span class="token string">'Github'</span><span class="token punctuation">,</span> <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'https://github.com/rc4gyyc'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token punctuation">{</span> <span class="token key atrule">text</span><span class="token punctuation">:</span> <span class="token string">'CSDN'</span><span class="token punctuation">,</span> <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'https://blog.csdn.net/rc4gyyc'</span> <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="静态资源"><a href="#静态资源" class="header-anchor">#</a> 静态资源</h3> <p>有时候，一些图片是经常被用到的，我们可以将其放到一个公共文件夹里，这样就可以在不同的博客里都引用到了。</p> <p>我们在 .vuepress 目录下新建 public 目录，然后放一个图片，例如 amiliya.jpg。此时文件夹目录结构如下：</p> <div class="language- extra-class"><pre class="language-text"><code>vuepress-learn
+├── .temp
+├── docs
+│   ├── .vuepress
+│   │   ├── public
+│   │   │   └── amiliya.jpg
+│   │   └── config.js
+│   ├── Basic
+│   │   ├── Basic1.md
+│   │   └── Basic2.md
+│   ├── Java
+│   │   ├── JavaEE.md
+│   │   └── JavaSE.md
+│   └── README.md
+├── package-lock.json
+└── package.json
+</code></pre></div><p>然后我们就可以在博客或配置文件里引用了。例如在 Basic1.md 里引用：</p> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token title important"><span class="token punctuation">#</span> Basic1</span>
+
+![](/amiliya.jpg)
+
+这里是计算机基础第一课！
+</code></pre></div><p>又或者在配置文件里访问图片：</p> <div class="language-ts extra-class"><pre class="language-ts"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    logo<span class="token operator">:</span> <span class="token string">'/re0.jpg'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="主题"><a href="#主题" class="header-anchor">#</a> 主题</h2> <p>我们之前想要增加侧边栏，需要一个个配置链接，才能让侧边栏展示成我们想要的效果，非常麻烦；有时候我们还想要加载 loading、切换动画、返回顶部、评论等功能，都自己开发的话太麻烦了。</p> <p>本博客就是使用了 <a href="https://doc.xugaoyi.com/" target="_blank" rel="noopener noreferrer">vdoing 主题 (opens new window)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，能自动生成侧边栏、标题和目录页等等功能，非常方便。本文就以 vdoing 主题为例，演示如何使用一个主题（建议读者先简单看一下该主题的文档，或者等看完本博客后再看也行）。</p> <h3 id="博客准备"><a href="#博客准备" class="header-anchor">#</a> 博客准备</h3> <p>由于 vdoing 主题对于 Markdown 文件和文件夹的命名有要求（需要在其前面用梳子编号），我们同步修改下。修改后目录结果如下：</p> <div class="language-js extra-class"><pre class="language-js"><code>vuepress<span class="token operator">-</span>learn
+├── docs
+│   ├── <span class="token punctuation">.</span>vuepress
+│   │   ├── <span class="token keyword">public</span>
+│   │   │   └── amiliya<span class="token punctuation">.</span>jpg
+│   │   └── config<span class="token punctuation">.</span>js
+│   ├── <span class="token number">01</span><span class="token punctuation">.</span>Basic
+│   │   ├── <span class="token number">01</span><span class="token punctuation">.</span>Basic1<span class="token punctuation">.</span>md
+│   │   └── <span class="token number">02</span><span class="token punctuation">.</span>Basic2<span class="token punctuation">.</span>md
+│   ├── <span class="token number">02</span><span class="token punctuation">.</span>Java
+│   │   ├── <span class="token number">01</span><span class="token punctuation">.</span>JavaEE<span class="token punctuation">.</span>md
+│   │   └── <span class="token number">02</span><span class="token punctuation">.</span>JavaSE<span class="token punctuation">.</span>md
+│   └── <span class="token constant">README</span><span class="token punctuation">.</span>md
+├── <span class="token keyword">package</span><span class="token operator">-</span>lock<span class="token punctuation">.</span>json
+└── <span class="token keyword">package</span><span class="token punctuation">.</span>json
+</code></pre></div><h3 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h3> <p>其实主题也就是一个 npm 包，可以通过 npm 的方式下载。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">npm</span> <span class="token function">install</span> vuepress-theme-vdoing <span class="token parameter variable">-D</span>
+</code></pre></div><p>在 config.js 里配置使用主题（第 6 行）：</p> <div class="language-yml extra-class"><pre class="language-yml"><code>module.exports = <span class="token punctuation">{</span>
+  <span class="token key atrule">title</span><span class="token punctuation">:</span> <span class="token string">'TypeScript4 文档'</span><span class="token punctuation">,</span>
+  <span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">'TypeScript4 最新官方文档翻译'</span><span class="token punctuation">,</span>
+  <span class="token key atrule">head</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token key atrule">rel</span><span class="token punctuation">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span> <span class="token key atrule">href</span><span class="token punctuation">:</span> <span class="token string">'https://s3.bmp.ovh/imgs/2023/02/15/16aa54f3ee84602e.webp'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token key atrule">base</span><span class="token punctuation">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span>
+  <span class="token key atrule">theme</span><span class="token punctuation">:</span> <span class="token string">'vdoing'</span><span class="token punctuation">,</span> 
+  <span class="token key atrule">locales</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token key atrule">'/'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token key atrule">lang</span><span class="token punctuation">:</span> <span class="token string">'zh-CN'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token key atrule">themeConfig</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token key atrule">logo</span><span class="token punctuation">:</span> <span class="token string">'https://s3.bmp.ovh/imgs/2022/12/02/bc7428e3916c3a4c.jpg'</span><span class="token punctuation">,</span>
+    <span class="token key atrule">nav</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> <span class="token key atrule">text</span><span class="token punctuation">:</span> <span class="token string">'首页'</span><span class="token punctuation">,</span> <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> 
+          <span class="token key atrule">text</span><span class="token punctuation">:</span> <span class="token string">'西螈的 JavaScript 博客'</span><span class="token punctuation">,</span> 
+          <span class="token key atrule">items</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">{</span> <span class="token key atrule">text</span><span class="token punctuation">:</span> <span class="token string">'Github'</span><span class="token punctuation">,</span> <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'https://github.com/rc4gyyc'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token punctuation">{</span> <span class="token key atrule">text</span><span class="token punctuation">:</span> <span class="token string">'CSDN'</span><span class="token punctuation">,</span> <span class="token key atrule">link</span><span class="token punctuation">:</span> <span class="token string">'https://blog.csdn.net/rc4gyyc'</span> <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token key atrule">sidebar</span><span class="token punctuation">:</span> <span class="token string">'structuring'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="部署"><a href="#部署" class="header-anchor">#</a> 部署</h2> <p>我们的博客就算是正式的做好了，接下来我们部署到免费的 Github Pages 上。我们在 Github 上新建一个仓库，这里我取得仓库名为：<code>cyanyep</code>。</p> <p>对应，我们需要在 <code>config.js</code> 添加一个 <code>base</code> 路径配置：</p> <div class="language-ts extra-class"><pre class="language-ts"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  	<span class="token comment">// 路径名为 &quot;/&lt;REPO&gt;/&quot;</span>
+    base<span class="token operator">:</span> <span class="token string">'/cyanyep/'</span><span class="token punctuation">,</span>
+  	<span class="token comment">//...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>最终的 <code>config.js</code> 文件内容为：</p> <div class="language-ts extra-class"><pre class="language-ts"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token string">'TypeScript4 文档'</span><span class="token punctuation">,</span>
+  description<span class="token operator">:</span> <span class="token string">'TypeScript4 最新官方文档翻译'</span><span class="token punctuation">,</span>
+  head<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token operator">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span> href<span class="token operator">:</span> <span class="token string">'https://s3.bmp.ovh/imgs/2023/02/15/16aa54f3ee84602e.webp'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  base<span class="token operator">:</span> <span class="token string">'/cyanyep/'</span><span class="token punctuation">,</span>
+  theme<span class="token operator">:</span> <span class="token string">'vdoing'</span><span class="token punctuation">,</span> 
+  locales<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">'/'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      lang<span class="token operator">:</span> <span class="token string">'zh-CN'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+	subSidebar<span class="token operator">:</span> <span class="token string">'auto'</span><span class="token punctuation">,</span>
+    logo<span class="token operator">:</span> <span class="token string">'https://s3.bmp.ovh/imgs/2022/12/02/bc7428e3916c3a4c.jpg'</span><span class="token punctuation">,</span>
+      nav<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'首页'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> 
+            text<span class="token operator">:</span> <span class="token string">'西螈的 JavaScript 博客'</span><span class="token punctuation">,</span> 
+            items<span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'Github'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'https://github.com/rc4gyyc'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'CSDN'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'https://blog.csdn.net/rc4gyyc'</span> <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      sidebar<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            title<span class="token operator">:</span> <span class="token string">'欢迎学习'</span><span class="token punctuation">,</span>
+            path<span class="token operator">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span>
+            collapsable<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 不折叠</span>
+            children<span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span> title<span class="token operator">:</span> <span class="token string">&quot;学前必读&quot;</span><span class="token punctuation">,</span> path<span class="token operator">:</span> <span class="token string">&quot;/&quot;</span> <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          title<span class="token operator">:</span> <span class="token string">&quot;个人博客网站搭建&quot;</span><span class="token punctuation">,</span>
+          path<span class="token operator">:</span> <span class="token string">'/Blog/build'</span><span class="token punctuation">,</span>
+          collapsable<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 不折叠</span>
+          children<span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> title<span class="token operator">:</span> <span class="token string">&quot;搭建个人博客网站&quot;</span><span class="token punctuation">,</span> 
+              author<span class="token operator">:</span> <span class="token string">&quot;西螈&quot;</span><span class="token punctuation">,</span> 
+              date<span class="token operator">:</span> <span class="token string">&quot;2024-12-12&quot;</span><span class="token punctuation">,</span> 
+              path<span class="token operator">:</span> <span class="token string">&quot;/Blog/build&quot;</span> <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>然后我们在项目 <code>vuepress-starter</code> 目录下建立一个脚本文件：<code>deploy.sh</code>，注意修改一下对应的用户名和仓库名：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token shebang important">#!/usr/bin/env sh</span>
+
+<span class="token comment"># 确保脚本抛出遇到的错误</span>
+<span class="token builtin class-name">set</span> <span class="token parameter variable">-e</span>
+
+<span class="token comment"># 生成静态文件</span>
+<span class="token function">npm</span> run docs:build
+
+<span class="token comment"># 进入生成的文件夹</span>
+<span class="token builtin class-name">cd</span> docs/.vuepress/dist
+
+<span class="token function">cp</span> <span class="token parameter variable">-r</span> <span class="token punctuation">..</span>/<span class="token punctuation">..</span>/<span class="token punctuation">..</span>/.github ./
+
+<span class="token function">git</span> init
+<span class="token function">git</span> <span class="token function">add</span> <span class="token parameter variable">-A</span>
+<span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">'deploy'</span>
+
+<span class="token comment"># 如果发布到 https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;</span>
+<span class="token function">git</span> push <span class="token parameter variable">-f</span> git@github.com:rc4gyyc/cyanyep.git master:cy-pages
+
+<span class="token builtin class-name">cd</span> -
+</code></pre></div><p>然后命令行切换到 <code>vuepress-starter</code> 目录下，执行 <code>sh deploy.sh</code>，就会开始构建，然后提交到远程仓库，注意这里提交到了 <code>cy-pages</code> 分支，我们查看下对应仓库分支的代码：</p> <p>我们可以在仓库的 <code>Settings -&gt; Pages</code> 中看到最后的地址：<code>rc4gyyc.github.io/cyanyep</code></p> <p>至此，我们完成了 VuePress 和 Github Pages 的部署。</p> <p>你就可以使用你的最基本的个人博客网站。</p> <hr> <p>参考：</p> <h1 id="域名"><a href="#域名" class="header-anchor">#</a> 域名</h1> <h2 id="购买域名"><a href="#购买域名" class="header-anchor">#</a> 购买域名</h2> <p>如果是新用户，可以在阿里云购买域名，一些域名首年只需要1元， 使用你仅有的一块钱买它</p> <p>购买域名后，可以设置域名解析，通过你购买的域名解析到你的个人博客网页xxx.github.io。</p> <p><img src="https://img.cyanyep.top/picture/image-20250327175501771.png" alt="image-20250327175501771"></p> <h2 id="域名解析"><a href="#域名解析" class="header-anchor">#</a> 域名解析</h2> <p>在github设置的setting-&gt;pages中设置你的域名</p> <p><img src="https://img.cyanyep.top/picture/image-20250327202925641.png" alt="image-20250327202925641"></p> <p>在阿里云中设置解析到你的gitHub.io</p> <p><img src="https://img.cyanyep.top/picture/image-20250327182538105.png" alt="image-20250327182538105"></p> <p>就可以通过你的域名cyanyep.top访问github.io了</p> <ul><li>访问你的域名后会发现css样式没了</li></ul> <p><img src="https://img.cyanyep.top/picture/image-20250327205312348.png" alt=""></p> <p>这是因为之前 GitHub Pages 将项目部署在子路径 <code>https://rc4gyyc.github.io/cyanyep/</code>下。</p> <p>而我们设置的config.ts文件中 VuePress 是根据网站部署在 /cyanyep/ 目录下设置页面的，</p> <p>所以需要<strong>修改config.ts文件的base路径配置：将原来的/cyanyep/ 改为 /</strong></p> <div class="language-ts extra-class"><pre class="language-ts"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  	<span class="token comment">// 路径名为 &quot;/&lt;REPO&gt;/&quot;</span>
+    base<span class="token operator">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span>
+  	<span class="token comment">//...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="域名解析完善"><a href="#域名解析完善" class="header-anchor">#</a> 域名解析完善</h2> <p>我们在setting-&gt;pages-&gt;custom domain设置的自定义域名.</p> <ul><li><p>本质上是在我们的page分支<code>cy-pages</code>中创建CNAME文件，并在文件中添加我们的域名<code>cyanyep.top</code></p></li> <li><p>而我们每次执行构建命令<code>npm run docs:build</code>时，都是重新构建项目并生成dist文件夹，然后推送到github上，Github Pages会根据dist文件夹中的内容构建页面，每次dist文件夹和远程分支cy-pages都会被覆盖，</p></li> <li><p>所以我们可以先创建好CNAME文件，然后通过<code>deploy.sh</code>脚本将文件放在dist文件夹中</p></li></ul> <h1 id="图床"><a href="#图床" class="header-anchor">#</a> 图床</h1> <p>参考视频：<a href="https://www.bilibili.com/video/BV1fw411t7eU/" target="_blank" rel="noopener noreferrer">十分钟搭建你自己的图床，手把手教你，免费，picgo, 七牛云<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>在七牛云中的存储对象中新建空间</p> <h2 id="图片上传工具"><a href="#图片上传工具" class="header-anchor">#</a> 图片上传工具</h2> <p>我的博客是基于 Markdown 的，如果我们每次上传图片都需要登录到七牛云控制台并上传，就太慢了。因此市面上出现了很多图片上传工具，能实现的效果是这样的：将图片拖拽到工具里，就能自动上传到对象存储里，并且获取图片链接，极大简化了我们的操作。</p> <p>我使用的工具是：</p> <ul><li><a href="https://molunerfinn.com/PicGo/" target="_blank" rel="noopener noreferrer">PicGo <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>：支持 Windows，Mac 和 Linux，基于 Electron 开发，支持多种图床上传</li></ul> <p>‍<a href="https://github.com/NothingMeaning/foureggs" target="_blank" rel="noopener noreferrer">github.com/NothingMeaning/foureggs (opens new window)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>：博主目前在用的，直接在 Markdown 文件上右键即可上传，并自动替换原始文件里的图片链接，不过会生成一个新的Markdown文件，非常方便。</p> <p>该工具有安装包和源码，源码里有可运行的exe文件，如果使用源码可以自己<a href="https://www.bilibili.com/video/BV1S64y1G76f/" target="_blank" rel="noopener noreferrer">将工具注册到右键中<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="为图床设置自己的域名"><a href="#为图床设置自己的域名" class="header-anchor">#</a> 为图床设置自己的域名</h2> <p><strong>七牛云给的免费访问域名</strong>是用于测试的，有有效期，想要长期使用还需要用自己的域名</p> <p>而且七牛云图床免费域名的使用的是<strong>http协议</strong>，不能用于https的网站（比如GitHub Page），会导致图片加载不出。</p> <p>需要用自己域名和证书</p> <p>可以在阿里云购买域名，<strong>使用阿里云免费证书</strong>，就供个人网站、测试用。每年有20个证书额度，一个证书可以用三个月</p> <h3 id="添加子域名"><a href="#添加子域名" class="header-anchor">#</a> 添加子域名</h3> <p>在阿里云云中添加一个新的子域名，用于博客网站访问我们的图床</p> <ul><li>解析记录类型选<strong>CNAME</strong>，</li> <li>主机记录就是访问图床时的子域名</li> <li><strong>记录值等下还要再改，先随便填</strong></li></ul> <p><img src="https://img.cyanyep.top/picture/image-20250327195035760.png" alt="image-20250327195035760"></p> <h3 id="将阿里云的证书添加到七牛云"><a href="#将阿里云的证书添加到七牛云" class="header-anchor">#</a> 将阿里云的证书添加到七牛云</h3> <p>参考视频：<a href="https://www.bilibili.com/video/BV1i4411s72P/" target="_blank" rel="noopener noreferrer">wordpress 极速搭建个人独立博客 014七牛云上传阿里云SSL证书<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>在阿里云中搜索ssl证书。</p> <p>在<strong>个人测试证书</strong>中<strong>立即购买</strong>，可以购买免费的证书，每年可以有20个额度，</p> <p>购买后<strong>创建证书</strong>，输入刚刚创建的<strong>子域名</strong>img.cyanyep.top，并输入个人信息进行验证就可以了</p> <p><img src="https://img.cyanyep.top/picture/image-20250327182639386.png" alt="image-20250327182639386"></p> <p>创建证书后在更多里找到下载，下载证书，服务器类型为其他</p> <p><img src="https://img.cyanyep.top/picture/image-20250327190139813.png" alt="image-20250327190139813"></p> <p>点击绑定域名可以跳转到添加域名中</p> <p><img src="https://img.cyanyep.top/picture/image-20250327191122830.png" alt="image-20250327191122830"></p> <p>在SSL 证书服务中上传自有证书</p> <ul><li>证书备注名：随便填，可以填你的域名</li> <li>证书内容（PEM 格式）：上传 下载的zip中 .pem后缀的文件</li> <li>证书私钥（PEM 格式）：上传 下载的zip中 .key后缀的文件</li></ul> <p><img src="https://img.cyanyep.top/picture/image-20250327193656277.png" alt="image-20250327193656277"></p> <h3 id="在七牛云添加域名"><a href="#在七牛云添加域名" class="header-anchor">#</a> 在七牛云添加域名</h3> <ul><li><p>输入刚刚创建的子域名</p></li> <li><p>选择https和刚刚上传的证书</p></li> <li><p>使用场景：图片小文件</p></li> <li><p>缓存配置：使用推荐配置</p></li> <li><p>其他不用修改</p></li> <li><p>点击创建</p></li></ul> <p><img src="https://img.cyanyep.top/picture/image-20250327201600024.png" alt="image-20250327201600024"></p> <h4 id="验证域名所有权"><a href="#验证域名所有权" class="header-anchor">#</a> 验证域名所有权</h4> <p><img src="https://img.cyanyep.top/picture/image-20250327201659604.png" alt="image-20250327201659604"></p> <p>根据图片在阿里云添加域名解析，</p> <ul><li><p>记录类型：txt</p></li> <li><p>主机记录：verification</p></li> <li><p>记录值：填你自己生成的</p></li></ul> <p><img src="https://img.cyanyep.top/picture/image-20250327201721567.png" alt="image-20250327201721567"></p> <h3 id="将子域名解析到七牛云"><a href="#将子域名解析到七牛云" class="header-anchor">#</a> 将子域名解析到七牛云</h3> <p>添加后回到七牛云<strong>点击验证</strong>，验证后会给你一个<strong>CNAME</strong>，将其配置到刚刚创建的子域名img.cyanyep.top的<strong>记录值</strong>中。</p> <p>这样你的子域名就会解析到七牛云的域名，可以通过你的子域名访问图片</p> <p><img src="https://img.cyanyep.top/picture/image-20250327201838662.png" alt="image-20250327201838662"></p> <p><img src="https://img.cyanyep.top/picture/image-20250327201858912.png" alt="image-20250327201858912"></p> <p>等待片刻就会发邮箱通知你加速域名创建成功</p> <p>修改你的外链域名就可以用你的子域名访问图片了</p> <p><img src="https://img.cyanyep.top/picture/image-20250327202228150.png" alt="image-20250327202228150"></p> <hr> <p>参考：</p> <p><a href="https://www.bilibili.com/video/BV1fw411t7eU/" target="_blank" rel="noopener noreferrer">十分钟搭建你自己的图床，手把手教你，免费，picgo, 七牛云<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://www.bilibili.com/video/BV1i4411s72P/" target="_blank" rel="noopener noreferrer">wordpress 极速搭建个人独立博客 014七牛云上传阿里云SSL证书<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://www.bilibili.com/video/BV1S64y1G76f/" target="_blank" rel="noopener noreferrer">将工具注册到右键中<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h1 id="同步github和gitee"><a href="#同步github和gitee" class="header-anchor">#</a> 同步GitHub和Gitee</h1> <p>参考：<a href="https://github.com/mqyqingfeng/Blog/issues/236" target="_blank" rel="noopener noreferrer">一篇教你代码同步 Github 和 Gitee<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>我们成功的用 VuePress 搭建了博客并部署到 Github Pages，但由于 Github 的访问问题，我们可以选择把仓库部署到 Gitee 一份，利用 Gitee 的 Pages 服务再生成一份静态网站用于备用（<strong>gitee Pages目前停止服务</strong>），不过也可以作为一个备份</p> <h2 id="_1-手动同步"><a href="#_1-手动同步" class="header-anchor">#</a> 1. 手动同步</h2> <p>在 Gitee 绑定 Github 账号后，选择仓库导入：</p> <p>在 Gitee 的项目主页，提供了同步的按钮，你只用点一下，即可与 Github 同步更新，但是注意这里的同步功能默认是强制同步。</p> <h2 id="_2-推送两个仓库"><a href="#_2-推送两个仓库" class="header-anchor">#</a> 2. 推送两个仓库</h2> <p>除此之外，我们也可以在 sh 脚本文件里，直接将项目同时推送到两个仓库地址上，具体操作参考<a href="https://github.com/mqyqingfeng/Blog/issues/236" target="_blank" rel="noopener noreferrer">《一篇教你代码同步 Github 和 Gitee》<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="_3-github-actions-自动同步-推荐使用"><a href="#_3-github-actions-自动同步-推荐使用" class="header-anchor">#</a> 3. Github Actions 自动同步（推荐使用）</h2> <p>我们也可以利用 Github Actions，写一个工作流，在发现 Github 博客仓库的 gh-pages 分支代码更新后，自动同步当前代码到 Gitee 上。</p> <p>关于 Github Actions 的介绍，可以参考阮一峰老师的 <a href="http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html" target="_blank" rel="noopener noreferrer">《GitHub Actions 入门教程》<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>为了实现 Gitee 和 Github 的同步，我们需要借助一个 action，还好业界已经有现成的实现了，这里我采用的是 <a href="https://github.com/Yikun/hub-mirror-action" target="_blank" rel="noopener noreferrer">Hub Mirror Action<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，我们可以看到使用的示例代码：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">steps</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Mirror the Github organization repos to Gitee.
+  <span class="token key atrule">uses</span><span class="token punctuation">:</span> Yikun/hub<span class="token punctuation">-</span>mirror<span class="token punctuation">-</span>action@master
+  <span class="token key atrule">with</span><span class="token punctuation">:</span>
+    <span class="token key atrule">src</span><span class="token punctuation">:</span> github/rc4gyyc
+    <span class="token key atrule">dst</span><span class="token punctuation">:</span> gitee/ciian
+    <span class="token key atrule">dst_key</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.GITEE_PRIVATE_KEY <span class="token punctuation">}</span><span class="token punctuation">}</span>
+    <span class="token key atrule">dst_token</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.GITEE_TOKEN <span class="token punctuation">}</span><span class="token punctuation">}</span>
+</code></pre></div><p>其中有四个必填项：</p> <ul><li><code>src</code> 表示需要被同步的源端账户名，即我们 Github 的账户名，因为我的 Github ID 是 rc4gyyc，所以这里我应该改成 <code>github/rc4gyyc</code>。</li> <li><code>dst</code> 表示需要同步到的目的端账户名，即我们 Gitee 的账户名，因为我的 Gitee ID 是 ciian，所以这里我应该改成 <code>gitee/ciian</code>。</li> <li><code>dst_key</code> 表示用于在目的端上传代码的私钥，然后将其保存在 Secrets 中。</li></ul> <h3 id="同步仓库具体操作"><a href="#同步仓库具体操作" class="header-anchor">#</a> 同步仓库具体操作</h3> <ol><li>注意gitee上同时要配置好公钥，在setting-&gt;ssh公钥中配置</li> <li>获取你电脑上的ssh私钥（在git命令行中执行、或者直接访问文件）：<code>cat ~/.ssh/id_rsa</code> <ul><li>复制私钥内容（注意要全部复制包括</li></ul></li></ol> <p>​			-----BEGIN OPENSSH PRIVATE KEY-----
+​			-----END OPENSSH PRIVATE KEY-----</p> <p>​			），然后在要<strong>同步的 Github 仓库</strong>中，选择 &quot;Setting&quot; -&gt; &quot;Secrets&quot; -&gt;&quot;Action&quot; -&gt; &quot;New repository secret&quot;</p> <p>​			填入 Secret 内容，Name 命名为 &quot;GITEE_PRIVATE_KEY&quot;，Value 为复制的内容</p> <p><img src="https://img.cyanyep.top/picture/image-20250327100809374.png" alt="image-20250327100809374"></p> <ol start="3"><li><p>dst_token 创建仓库的API tokens， 用于自动创建不存在的仓库。这里我们从 Gitee 上获取，具体地址为 https://gitee.com/profile/personal_access_tokens。生成并复制 Token，然后同样的步骤，保存在 Github 的 Secrets 中，Name 为 &quot;GITEE_TOKEN&quot;</p></li> <li><p>然后我们就可以在项目根目录(vuepress-starter)下建立目录 <code>.github/workflows</code> ，然后创建一个名为<code>syncToGitee.yml</code> 的文件：</p></li></ol> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">name</span><span class="token punctuation">:</span> syncToGitee
+<span class="token key atrule">on</span><span class="token punctuation">:</span>
+  <span class="token key atrule">push</span><span class="token punctuation">:</span>
+    <span class="token key atrule">branches</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> cy<span class="token punctuation">-</span>pages
+<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">repo-sync</span><span class="token punctuation">:</span>
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Mirror the Github organization repos to Gitee.
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> Yikun/hub<span class="token punctuation">-</span>mirror<span class="token punctuation">-</span>action@master
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">src</span><span class="token punctuation">:</span> <span class="token string">'github/rc4gyyc'</span>
+          <span class="token key atrule">dst</span><span class="token punctuation">:</span> <span class="token string">'gitee/ciian'</span>
+          <span class="token key atrule">dst_key</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.GITEE_PRIVATE_KEY <span class="token punctuation">}</span><span class="token punctuation">}</span>
+          <span class="token key atrule">dst_token</span><span class="token punctuation">:</span>  $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.GITEE_TOKEN <span class="token punctuation">}</span><span class="token punctuation">}</span>
+          <span class="token key atrule">static_list</span><span class="token punctuation">:</span> <span class="token string">&quot;cyanyep&quot;</span>
+          <span class="token key atrule">force_update</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+          <span class="token key atrule">debug</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+</code></pre></div><p>还有几个问题要注意：</p> <ul><li>on: push: branches: 就是当cy-pages分支发生事件推送时，GitHub Actions 会检查该分支当前提交中是否存在对应的 YAML 文件。所以我们需要将syncToGitee.yml文件放在cy-pages分支下</li> <li>观察我们的脚本代码，我们就会发现，每次我们 <code>sh deploy.sh</code> 的时候，都是编译代码到 dist 目录，然后重新 git init ，最后强制提交。就是说dist目录才是要提交到分支上的，而且每次运行都会清空dist重新编译，本地仓库也会重新初始化后再强制推送上去覆盖原来的分支，也就是说不能直接把脚本放在git仓库的cy-pages分支中</li></ul> <ol start="5"><li>为此，我们可以在脚本里添加代码，每次编译完后，再拷贝外层的 <code>.github/woorkflows/syncToGitee.yml</code> 到 dist 目录里，再提交到 Github 上。</li></ol> <p>所以我们依然在项目根目录添加目录和文件，此时的文件结构如下：</p> <div class="language- extra-class"><pre class="language-text"><code>.
+├─ docs
+│  ├─ README.md
+│  └─ .vuepress
+│     └─ config.js
+└─ .github
+│  └─ workflows
+│			└─ syncToGitee.yml
+└─ package.json
+└─ deploy.sh
+</code></pre></div><p>脚本文件<code>deploy.sh</code>代码如下：</p> <div class="language- extra-class"><pre class="language-text"><code>#!/usr/bin/env sh
+
+# 确保脚本抛出遇到的错误
+set -e
+
+# 生成静态文件
+npm run docs:build
+
+# 进入生成的文件夹
+cd docs/.vuepress/dist
+
+###添加###
+# 拷贝目录和文件
+cp -r ../../../.github ./
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# 如果发布到 https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;
+git push -f git@github.com:rc4gyyc/cyanyep.git master:cy-pages
+
+cd -
+</code></pre></div><p>此时我们再运行 <code>sh deploy.sh</code> 代码提交到 Github，就可以在仓库的 Actions 中看到运行记录：</p> <h3 id="gitee-自动部署-pages-gitee-pages目前停止服务-以下操作已无效"><a href="#gitee-自动部署-pages-gitee-pages目前停止服务-以下操作已无效" class="header-anchor">#</a> Gitee 自动部署 Pages（Gitee Pages目前停止服务，以下操作已无效）</h3> <p>参考：<a href="https://github.com/mqyqingfeng/Blog/issues/238" target="_blank" rel="noopener noreferrer">Gitee 如何自动部署 Pages？还是用 GitHub Actions!<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>在syncToGitee文件中补充代码</p> <ul><li>可以在仓库的secret中设置gitee用户名</li></ul> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">name</span><span class="token punctuation">:</span> syncToGitee
+<span class="token key atrule">on</span><span class="token punctuation">:</span>
+  <span class="token key atrule">push</span><span class="token punctuation">:</span>
+    <span class="token key atrule">branches</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> cy<span class="token punctuation">-</span>pages
+<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">repo-sync</span><span class="token punctuation">:</span>
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Mirror the Github organization repos to Gitee.
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> Yikun/hub<span class="token punctuation">-</span>mirror<span class="token punctuation">-</span>action@master
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">src</span><span class="token punctuation">:</span> <span class="token string">'github/rc4gyyc'</span>
+          <span class="token key atrule">dst</span><span class="token punctuation">:</span> <span class="token string">'gitee/ciian'</span>
+          <span class="token key atrule">dst_key</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.GITEE_PRIVATE_KEY <span class="token punctuation">}</span><span class="token punctuation">}</span>
+          <span class="token key atrule">dst_token</span><span class="token punctuation">:</span>  $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.GITEE_TOKEN <span class="token punctuation">}</span><span class="token punctuation">}</span>
+          <span class="token key atrule">static_list</span><span class="token punctuation">:</span> <span class="token string">&quot;cyanyep&quot;</span>
+          <span class="token key atrule">force_update</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+          <span class="token key atrule">debug</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+          
+      <span class="token comment"># - name: Build Gitee Pages</span>
+      <span class="token comment">#   uses: yanglbme/gitee-pages-action@main</span>
+      <span class="token comment">#   with:</span>
+      <span class="token comment">#     # 注意替换为你的 Gitee 用户名</span>
+      <span class="token comment">#     gitee-username: ${{ secrets.GITEE_USERNAME }}</span>
+      <span class="token comment">#     # 注意在 Settings-&gt;Secrets 配置 GITEE_PASSWORD</span>
+      <span class="token comment">#     gitee-password: ${{ secrets.GITEE_PASSWORD }}</span>
+      <span class="token comment">#     # 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错</span>
+      <span class="token comment">#     gitee-repo: Ciian/cyanyep</span>
+      <span class="token comment">#     # 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）</span>
+      <span class="token comment">#     branch: cy-pages</span>
+</code></pre></div><ul><li>注意<strong>用户名和仓库名</strong>都区分大小写</li></ul> <hr> <p>参考：</p> <p><a href="https://github.com/mqyqingfeng/Blog/issues/236" target="_blank" rel="noopener noreferrer">《一篇教你代码同步 Github 和 Gitee》<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html" target="_blank" rel="noopener noreferrer">《GitHub Actions 入门教程》<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://github.com/mqyqingfeng/Blog/issues/238" target="_blank" rel="noopener noreferrer">Gitee 如何自动部署 Pages？还是用 GitHub Actions!<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h1 id="自动部署"><a href="#自动部署" class="header-anchor">#</a> 自动部署</h1> <h2 id="通过github-action自动构建并部署项目"><a href="#通过github-action自动构建并部署项目" class="header-anchor">#</a> 通过Github Action自动构建并部署项目</h2> <p>每次修改博客后都需要执行脚本deploy.sh，重新构建才能上传的github。</p> <p>了解到GitHub的Action后，我想是否可以直接把整个项目上传到github的一个分支<code>pages-code</code>（从main分支新建一个分支）上，再通过workflow自动将项目的代码构建并部署到指定GitHub Page的分支<code>cy-pages</code>上，(如果有自己的服务器也可以部署到服务器上，可以参考<a href="https://www.peterjxl.com/Blog/Deploy/#%E4%BD%BF%E7%94%A8-github-action" target="_blank" rel="noopener noreferrer">这篇文章<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>)</p> <p>而且如果Action执行失败还会发qq邮箱通知，不用担心构建失败不知道。</p> <ol><li><p>在项目根目录创建文件.gitignore，推送时忽略node_modules目录，因为node_modules是一些三方依赖很大，而且可以在workflow中安装</p> <div class="language-.gitignore extra-class"><pre class="language-text"><code>node_modules/
+</code></pre></div></li> <li><p>仍然在.github/woorkflows/目录中创建新的workflow脚本deploy.yml</p></li></ol> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy VuePress to GitHub Pages
+<span class="token comment"># 当 pages-code 分支有 push 事件时触发</span>
+<span class="token key atrule">on</span><span class="token punctuation">:</span>
+  <span class="token key atrule">push</span><span class="token punctuation">:</span>
+    <span class="token key atrule">branches</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> pages<span class="token punctuation">-</span>code
+      
+<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">build-and-deploy</span><span class="token punctuation">:</span>
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span>
+      <span class="token comment"># 检出代码</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v3
+
+      <span class="token comment"># 使用action库，安装node</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Set up Node.js  <span class="token comment"># 使用action库  actions/setup-node安装node</span>
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v3
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token number">16</span> <span class="token comment"># 根据你的项目需求选择 Node.js 版本</span>
+
+      <span class="token comment"># 安装依赖</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> npm install 
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> npm install 
+    
+
+      <span class="token comment"># 构建 VuePress 项目，并将workflow拷贝到dist中用于仓库同步到gitee</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Build VuePress
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run docs<span class="token punctuation">:</span>build
+
+      <span class="token comment"># 复制同步工作流syncToGitee 到 dist</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Copy .github to dist
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+          mkdir -p ./docs/.vuepress/dist/.github/workflows
+          cp ./.github/workflows/syncToGitee.yml ./docs/.vuepress/dist/.github/workflows/</span>
+
+      <span class="token comment"># 部署到 GitHub Pages</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy to GitHub Pages
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">github_token</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.PERSONAL_ACCESS_TOKEN  <span class="token punctuation">}</span><span class="token punctuation">}</span> <span class="token comment"># 在github生成PERSONAL_ACCESS_TOKEN</span>
+          <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./docs/.vuepress/dist <span class="token comment"># VuePress 默认的输出目录</span>
+          <span class="token key atrule">publish_branch</span><span class="token punctuation">:</span> cy<span class="token punctuation">-</span>pages <span class="token comment"># 部署到的目标分支</span>
+          <span class="token key atrule">exclude_assets</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span>
+
+
+<span class="token comment">#      #部署到服务器</span>
+<span class="token comment">#      - name: Deploy to Staging My server</span>
+<span class="token comment">#        uses: easingthemes/ssh-deploy@v2.1.6</span>
+<span class="token comment">#        env:</span>
+<span class="token comment">#          # 使用GitHub仓库里的secret设置的值</span>
+<span class="token comment">#          SSH_PRIVATE_KEY: ${{ secrets.MY_SERVER_PRIVATE_KEY }} </span>
+<span class="token comment">#          # 源目录，编译后生成的文件目录</span>
+<span class="token comment">#          SOURCE: './docs/.vuepress/dist/'</span>
+<span class="token comment">#          #服务器公网地址</span>
+<span class="token comment">#          REMOTE_HOST: ${{ secrets.MY_SERVER_IP }}</span>
+<span class="token comment">#          #服务器用户名-一般默认root</span>
+<span class="token comment">#          REMOTE_USER: 'root'</span>
+<span class="token comment">#          #服务器中，代码部署的位置</span>
+<span class="token comment">#          TARGET: '/opt/myblog'</span>
+<span class="token comment">#          #去除的文件</span>
+<span class="token comment">#          EXCLUDE: &quot;/dist/, /node_modules/&quot; </span>
+</code></pre></div><p>这里简单说明下文件的内容</p> <ul><li>第一行：本次workflow的名字，可自行更换</li> <li>第 3~6 行：说明只有当 pages-code分支有提交到远程库（push）的时候，执行本次workflow</li> <li>第 8 行：jobs，本次我们只用了一个 job，也就是第 9 行的 job</li> <li>第 10 行：指定要在哪个操作系统的环境下编译出包（一般是 Linux）</li> <li>接下来就是 deploy 这个 job 的 steps，每个 step 做了不同的事情，例如安装 node，然后安装依赖和执行构建命令</li> <li>第 31 行开始就是一些环境变量的设置，例如读取我们上一小节设置的 IP 和私钥信息</li></ul> <p>注意：</p> <ul><li><p>因为workflow需要放在对应分支下才能被触发，pages-code分支触发事件push时，GitHub Actions 会检查该分支当前提交中是否存在对应的 YAML 文件，才会执行，所以需要把syncToGitee.yml文件复制到 dist目录</p></li> <li><p>github_token：</p> <ol><li>生成个人访问令牌 (PAT)：
+<ul><li>在GitHub的 <strong>Settings &gt; Developer settings &gt; Personal access tokens</strong>-&gt;token classic。</li> <li>创建一个新的 token (classic)，确保选中了 <code>repo</code> 和 <code>workflow</code> 权限。</li> <li>复制生成的令牌。</li></ul></li> <li>将 token 添加到 Secrets：
+<ul><li>在你的 GitHub 仓库中，进入 <strong>Settings &gt; Secrets and variables &gt; Actions</strong>。</li> <li>添加一个新的 Repository Secret，名称为 <code>PERSONAL_ACCESS_TOKEN</code>，值为刚刚生成的 PAT。</li></ul></li></ol></li> <li><p>publish_dir: 就是你要复制到目标分支cy-pages的目录</p></li> <li><p>exclude_assets: 指定哪些文件或目录不推送到目标分支，exclude_assets的值默认有**<code>.github</code>**</p></li></ul> <h2 id="优化自动部署"><a href="#优化自动部署" class="header-anchor">#</a> 优化自动部署</h2> <p>每次等待构建并部署都需要等2分钟甚至更久，这是因为每次执行workflow都需要重新搭建环境<code>npm install</code>，GitHub Action 提供了缓存机制，可以不用每次都搭建环境。修改deploy.yml文件</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">build-and-deploy</span><span class="token punctuation">:</span>
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span>
+      <span class="token comment"># ...</span>
+      
+      <span class="token comment"># 添加缓存 </span>
+      <span class="token comment"># 缓存 node_modules</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Cache node_modules
+        <span class="token key atrule">id</span><span class="token punctuation">:</span> cache<span class="token punctuation">-</span>node<span class="token punctuation">-</span>modules
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/cache@v3
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">path</span><span class="token punctuation">:</span> node_modules
+          <span class="token key atrule">key</span><span class="token punctuation">:</span> node<span class="token punctuation">-</span>modules<span class="token punctuation">-</span>$<span class="token punctuation">{</span><span class="token punctuation">{</span> runner.os <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">-</span>$<span class="token punctuation">{</span><span class="token punctuation">{</span> hashFiles('<span class="token important">**/package-lock.json')</span> <span class="token punctuation">}</span><span class="token punctuation">}</span>
+          <span class="token key atrule">restore-keys</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+            node-modules-${{ runner.os }}-</span>
+
+      <span class="token comment"># 安装依赖（仅在缓存未命中时执行）</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> npm install 
+        <span class="token key atrule">if</span><span class="token punctuation">:</span> steps.cache<span class="token punctuation">-</span>node<span class="token punctuation">-</span>modules.outputs.cache<span class="token punctuation">-</span>hit <span class="token tag">!=</span> 'true'
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> npm install 
+    
+	  <span class="token comment"># ...</span>
+	  
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>解释（由于带${{ }}部署项目时会被node解析，所以写在代码块里）
+path: node_modules 
+	表示要缓存项目的 node_modules 文件夹
+key: node-modules-${{ runner.os }}-${{ hashFiles('\**/package-lock.json') }}
+	node-modules-: 这是一个固定的前缀，用来标识缓存的内容是 `node_modules`。
+	${{ runner.os }}: 表示当前运行的操作系统（如 `ubuntu-latest`, `windows-latest`, `macos-latest`）。
+	${{ hashFiles('**/package-lock.json') }}: 基于 `package-lock.json` 文件的内容生成一个哈希值。如果 `package-lock.json 发生变化（例如添加或更新依赖），哈希值也会变化，从而触发新的缓存。
+	
+restore-keys: | 
+	node-modules-${{ runner.os }}-
+	作用： 提供一组备用的缓存键（`restore-keys`），用于在主键（key）未命中时尝试部分匹配。
+	分解解释：
+		|：YAML 的多行字符串语法，表示后面的每一行是一个独立的 restore-key。
+		node-modules-${{ runner.os }}-: 这是一个“模糊匹配”的键，只包含固定前缀和操作系统信息，而不包含 `package-lock.json 的哈希值。如果主键（key）未命中，GitHub Actions 会依次尝试包含这些前缀的缓存：
+</code></pre></div><p>可以看到workflow的运行时间，因为命中缓存跳过了执行<code>npm install</code>的40秒</p> <p>这样deploy.sh脚本就没用了</p></div></div> <!----> <div class="page-edit"><!----> <!----> <!----></div> <div class="page-nav-wapper"><!----> <!----></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/c70e3b/"><div>
+            Learn
+            <!----></div></a> <span class="date">03-22</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/0779a4/"><div>
+            JUC
+            <!----></div></a> <span class="date">03-21</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/29ecf5/"><div>
+            Linux
+            <!----></div></a> <span class="date">03-19</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><!----> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> <!----></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.989b7baa.js" defer></script><script src="/assets/js/3.2b256d15.js" defer></script><script src="/assets/js/2.14e61edd.js" defer></script><script src="/assets/js/37.f6bb2295.js" defer></script>
+  </body>
+</html>
